@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "platform": "linux",
+  "checks": [
+    "Prepared launcher serves real Next/FastAPI catalog and SIGTERM closes both service trees",
+    "Occupied api port: nonzero exit, no false readiness, peer service stopped",
+    "Occupied web port: nonzero exit, no false readiness, peer service stopped"
+  ],
+  "fresh_install_tested": false,
+  "launcher": "production"
+}

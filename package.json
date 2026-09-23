@@ -1,0 +1,15 @@
+{
+  "name": "football-recruitment-platform",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Monorepo commands for the free Football Recruitment Platform",
+  "scripts": {
+    "dev": "node apps/web/scripts/dev.mjs",
+    "build": "npm --prefix apps/web run build",
+    "test": "npm --prefix apps/web test",
+    "typecheck": "npm --prefix apps/web run typecheck",
+    "lint": "npm --prefix apps/web run lint",
+    "format:check": "npm --prefix apps/web run format:check"
+  },
+  "engines": { "node": ">=22.13" }
+}

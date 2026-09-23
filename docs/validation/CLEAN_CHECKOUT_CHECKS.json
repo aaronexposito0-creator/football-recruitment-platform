@@ -1,0 +1,18 @@
+{
+  "platform": "Linux",
+  "clone": "temporary local Git origin; no external GitHub execution",
+  "checks": [
+    "Fresh local Git clone: README --install starts both services and serves 493 real players without provider cache",
+    "python -m pytest -q",
+    "python -m ruff check .",
+    "python -m ruff format --check core apps/api scripts tests",
+    "python -m scripts.validate_analysis",
+    "npm test",
+    "npm run typecheck",
+    "npm run lint",
+    "npm run format:check",
+    "npm run build",
+    "python -m scripts.verify_stack --standalone",
+    "python -m scripts.verify_dev --production"
+  ]
+}

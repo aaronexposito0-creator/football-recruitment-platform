@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "dataset_id": "c6b20c36ee58c5b18c3e",
+  "checks": {
+    "published_file_hashes": 1499,
+    "player_exposures": 493,
+    "rate_cells": 10353,
+    "percentile_cells": 10353,
+    "similarity_reference_cells": 76960,
+    "similarity_pairs": 9620,
+    "fit_explanations": 641
+  },
+  "source_revision": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb",
+  "matches": 51,
+  "events": 187924,
+  "cohorts_at_180": {
+    "AM": 19,
+    "CB": 59,
+    "CM": 14,
+    "DM": 41,
+    "FB": 49,
+    "GK": 24,
+    "ST": 29,
+    "W": 30
+  },
+  "players_below_180": 228,
+  "players_with_missing_metrics": [
+    {
+      "player_id": "statsbomb:player:21880",
+      "player_name": "Brian Brobbey",
+      "minutes": 2.4951666666666674,
+      "missing": [
+        "pass_completion"
+      ]
+    },
+    {
+      "player_id": "statsbomb:player:30311",
+      "player_name": "İrfan Can Kahveci",
+      "minutes": 12.692249999999998,
+      "missing": [
+        "pass_completion"
+      ]
+    },
+    {
+      "player_id": "statsbomb:player:32688",
+      "player_name": "Charles De Ketelaere",
+      "minutes": 5.62991666666666,
+      "missing": [
+        "pass_completion"
+      ]
+    },
+    {
+      "player_id": "statsbomb:player:3311",
+      "player_name": "Daley Blind",
+      "minutes": 3.3408666666666704,
+      "missing": [
+        "pass_completion"
+      ]
+    },
+    {
+      "player_id": "statsbomb:player:4813",
+      "player_name": "Andreas Weimann",
+      "minutes": 5.920733333333335,
+      "missing": [
+        "pass_completion"
+      ]
+    },
+    {
+      "player_id": "statsbomb:player:6941",
+      "player_name": "Jasmin Kurtič",
+      "minutes": 0.5572166666666666,
+      "missing": [
+        "pass_completion"
+      ]
+    }
+  ],
+  "smallest_exposure": {
+    "player_id": "statsbomb:player:6941",
+    "player_name": "Jasmin Kurtič",
+    "minutes": 0.5572166666666666
+  },
+  "manual_reference_players": [
+    {
+      "player_id": "statsbomb:player:316046",
+      "player_name": "Lamine Yamal Nasraoui Ebana",
+      "position_group": "W",
+      "minutes": 530.9740333333333,
+      "appearances": 7,
+      "totals": {
+        "assists": 4,
+        "ball_recoveries": 22,
+        "carries": 238,
+        "completed_passes": 161,
+        "entries_into_box": 30,
+        "goals": 1,
+        "interceptions": 3,
+        "key_passes": 18,
+        "non_penalty_goals": 1,
+        "npxg": 1.5872332399999998,
+        "passes": 204,
+        "passes_into_final_third": 4,
+        "pressures": 112,
+        "progressive_carries": 34,
+        "progressive_passes": 11,
+        "shots": 18,
+        "tackles": 10,
+        "turnovers": 24,
+        "xa": 2.149744518,
+        "xg": 1.5872332399999998
+      },
+      "metrics": {
+        "assists_per90": 0.6779992568374813,
+        "ball_recoveries_per90": 3.7289959126061474,
+        "carries_per90": 40.34095578183014,
+        "completed_passes_per90": 27.289470087708622,
+        "entries_into_box_per90": 5.08499442628111,
+        "goals_per90": 0.16949981420937033,
+        "interceptions_per90": 0.508499442628111,
+        "key_passes_per90": 3.050996655768666,
+        "non_penalty_goals_per90": 0.16949981420937033,
+        "npxg_per90": 0.26903573928693686,
+        "pass_completion": 78.92156862745098,
+        "passes_into_final_third_per90": 0.6779992568374813,
+        "passes_per90": 34.577962098711545,
+        "pressures_per90": 18.983979191449478,
+        "progressive_carries_per90": 5.762993683118591,
+        "progressive_passes_per90": 1.8644979563030737,
+        "shots_per90": 3.050996655768666,
+        "tackles_per90": 1.6949981420937033,
+        "turnovers_per90": 4.067995541024888,
+        "xa_per90": 0.36438129639861233,
+        "xg_per90": 0.26903573928693686
+      }
+    },
+    {
+      "player_id": "statsbomb:player:6655",
+      "player_name": "Fabián Ruiz Peña",
+      "position_group": "DM",
+      "minutes": 579.2927333333333,
+      "appearances": 6,
+      "totals": {
+        "assists": 2,
+        "ball_recoveries": 37,
+        "carries": 389,
+        "completed_passes": 388,
+        "entries_into_box": 9,
+        "goals": 2,
+        "interceptions": 3,
+        "key_passes": 11,
+        "non_penalty_goals": 2,
+        "npxg": 1.144999673,
+        "passes": 437,
+        "passes_into_final_third": 45,
+        "pressures": 84,
+        "progressive_carries": 9,
+        "progressive_passes": 24,
+        "shots": 17,
+        "tackles": 7,
+        "turnovers": 10,
+        "xa": 1.165055912,
+        "xg": 1.144999673
+      },
+      "metrics": {
+        "assists_per90": 0.3107237319623435,
+        "ball_recoveries_per90": 5.748389041303355,
+        "carries_per90": 60.435765866675816,
+        "completed_passes_per90": 60.28040400069464,
+        "entries_into_box_per90": 1.3982567938305457,
+        "goals_per90": 0.3107237319623435,
+        "interceptions_per90": 0.4660855979435153,
+        "key_passes_per90": 1.7089805257928894,
+        "non_penalty_goals_per90": 0.3107237319623435,
+        "npxg_per90": 0.17788928574511148,
+        "pass_completion": 88.78718535469108,
+        "passes_into_final_third_per90": 6.991283969152729,
+        "passes_per90": 67.89313543377206,
+        "pressures_per90": 13.050396742418428,
+        "progressive_carries_per90": 1.3982567938305457,
+        "progressive_passes_per90": 3.7286847835481223,
+        "shots_per90": 2.6411517216799196,
+        "tackles_per90": 1.0875330618682022,
+        "turnovers_per90": 1.5536186598117174,
+        "xa_per90": 0.1810052604607158,
+        "xg_per90": 0.17788928574511148
+      }
+    },
+    {
+      "player_id": "statsbomb:player:6765",
+      "player_name": "Rodrigo Hernández Cascante",
+      "position_group": "DM",
+      "minutes": 560.4211666666666,
+      "appearances": 6,
+      "totals": {
+        "assists": 0,
+        "ball_recoveries": 26,
+        "carries": 355,
+        "completed_passes": 411,
+        "entries_into_box": 3,
+        "goals": 1,
+        "interceptions": 3,
+        "key_passes": 6,
+        "non_penalty_goals": 1,
+        "npxg": 0.19102767569999998,
+        "passes": 436,
+        "passes_into_final_third": 40,
+        "pressures": 88,
+        "progressive_carries": 7,
+        "progressive_passes": 19,
+        "shots": 5,
+        "tackles": 11,
+        "turnovers": 5,
+        "xa": 0.26907813,
+        "xg": 0.19102767569999998
+      },
+      "metrics": {
+        "assists_per90": 0.0,
+        "ball_recoveries_per90": 4.1754311563892275,
+        "carries_per90": 57.01069463531446,
+        "completed_passes_per90": 66.00393097215279,
+        "entries_into_box_per90": 0.4817805180449109,
+        "goals_per90": 0.1605935060149703,
+        "interceptions_per90": 0.4817805180449109,
+        "key_passes_per90": 0.9635610360898218,
+        "non_penalty_goals_per90": 0.1605935060149703,
+        "npxg_per90": 0.030677804186553744,
+        "pass_completion": 94.26605504587155,
+        "passes_into_final_third_per90": 6.4237402405988115,
+        "passes_per90": 70.01876862252705,
+        "pressures_per90": 14.132228529317386,
+        "progressive_carries_per90": 1.124154542104792,
+        "progressive_passes_per90": 3.051276614284436,
+        "shots_per90": 0.8029675300748514,
+        "tackles_per90": 1.7665285661646732,
+        "turnovers_per90": 0.8029675300748514,
+        "xa_per90": 0.04321220028865196,
+        "xg_per90": 0.030677804186553744
+      }
+    }
+  ]
+}

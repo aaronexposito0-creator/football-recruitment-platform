@@ -1,0 +1,91 @@
+{
+  "verified_at_utc": "2026-09-23T14:04:22.792496+00:00",
+  "purpose": "Final source-package publication gate; not hosted-demo acceptance",
+  "python": {
+    "tests_passed": 81,
+    "duration_seconds": 16.65,
+    "upstream_deprecation_warnings": 2,
+    "ruff_check": "passed",
+    "ruff_format": "passed"
+  },
+  "frontend": {
+    "tests_passed": 36,
+    "duration_ms": 667.320601,
+    "typecheck": "passed",
+    "eslint_zero_warnings": "passed",
+    "prettier": "passed",
+    "next_version": "15.5.25",
+    "production_build": "passed",
+    "main_route_kb": 56,
+    "first_load_kb": 159
+  },
+  "production_http": {
+    "groups_passed": 13,
+    "provider_requests": 0,
+    "private_cache": "empty",
+    "report": "PRODUCTION_STACK_CHECKS.json"
+  },
+  "production_launcher": {
+    "groups_passed": 3,
+    "report": "PRODUCTION_LAUNCHER_CHECKS.json"
+  },
+  "analysis": {
+    "published_hashes": 1499,
+    "exposures": 493,
+    "rates": 10353,
+    "percentiles": 10353,
+    "similarity_reference_cells": 76960,
+    "similarity_pairs": 9620,
+    "fit_explanations": 641,
+    "status": "passed"
+  },
+  "private_cache_audit": {
+    "source_hashes": 104,
+    "parquet_hashes": 61,
+    "events": 187924,
+    "minute_mismatches": 0,
+    "status": "passed",
+    "raw_bytes_in_package": false
+  },
+  "clean_clone": {
+    "status": "previous completed rehearsal verified present",
+    "stages": 12,
+    "report": "CLEAN_CHECKOUT_CHECKS.json",
+    "external_github_ci": false
+  },
+  "github": {
+    "account": "aaronexposito0-creator",
+    "proposed_name": "football-recruitment-platform",
+    "accessible_repository_search": "no matching repository",
+    "accessible_owner_repository_list": "no matching repository",
+    "write_actions_performed": false,
+    "repository_creation_operation_available": false
+  },
+  "not_executed": [
+    "Docker image builds and constrained-container execution",
+    "External GitHub Actions execution",
+    "Public Render deployment and hosted resource behaviour",
+    "Interactive browser custom Fit and My Club with live Python backend",
+    "Mobile viewport/touch acceptance",
+    "Browser CSV download completion",
+    "Windows lifecycle"
+  ],
+  "licence": "Code MIT; StatsBomb-derived research summaries and logo retain provider terms, noncommercial use and attribution. Raw source cache and canonical event warehouse excluded.",
+  "package_verification": {
+    "verified_at_utc": "2026-09-23T14:08:23.374380+00:00",
+    "archive": "Football_Recruitment_Platform_v0.2_Showcase_Aaron_Exposito.zip",
+    "public_source_files": 1670,
+    "archive_files_including_checksum_manifest": 1671,
+    "source_byte_comparison": "passed for every included source file",
+    "zip_crc": "passed for every entry",
+    "extracted_publication_scan": "zero findings",
+    "extracted_analysis_audit": "passed",
+    "extracted_python_tests": {
+      "passed": 81,
+      "duration_seconds": 13.59,
+      "warnings": 2,
+      "dependencies": "existing locked environment; not a fresh installation"
+    },
+    "final_assembly": "rechecks all bytes after updating these documentation and verification records; runtime code unchanged"
+  }
+}

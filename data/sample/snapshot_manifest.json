@@ -1,0 +1,10 @@
+{
+  "analysis_engine_version": "research-v2.3",
+  "dataset_id": "c6b20c36ee58c5b18c3e",
+  "feature_version": "2.1.1",
+  "profile_count": 493,
+  "publication_manifest_sha256": "c42af3bc9222483465f21ea3c727938e8c1aac481e15360cf6f028ddae8d1c2d",
+  "published_file_count": 1499,
+  "purpose": "Published analysis fallback from the same Python API functions; no raw provider files.",
+  "source_revision": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb"
+}

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: football-recruitment-showcase
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: frankfurt
+    healthCheckPath: /api/football/data/coverage
+    autoDeployTrigger: checksPass

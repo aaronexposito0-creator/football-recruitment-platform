@@ -1,0 +1,14 @@
+{
+  "goals": [["shots"]],
+  "non_penalty_goals": [["goals"], ["shots"]],
+  "xg": [["shots"]],
+  "npxg": [["xg"], ["shots"]],
+  "completed_passes": [["passes"]],
+  "key_passes": [["passes"]],
+  "assists": [["key_passes"], ["passes"]],
+  "xa": [["key_passes"], ["passes"]],
+  "progressive_passes": [["completed_passes"], ["passes"]],
+  "passes_into_final_third": [["completed_passes"], ["passes"]],
+  "progressive_carries": [["carries"]],
+  "entries_into_box": [["completed_passes", "carries"], ["passes", "carries"]]
+}

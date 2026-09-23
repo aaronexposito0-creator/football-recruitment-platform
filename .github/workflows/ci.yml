@@ -1,0 +1,68 @@
+name: Analysis and application checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      FRP_DATA_DIR: ${{ runner.temp }}/frp-empty-private-cache
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install locked dependencies
+        run: |
+          python -m pip install -c requirements.lock -e '.[dev]'
+          npm --prefix apps/web ci --no-fund --no-audit
+      - name: Python checks, including offline pipeline fixtures
+        run: |
+          python -m ruff check core apps/api scripts tests
+          python -m ruff format --check core apps/api scripts tests
+          python -m pytest -q
+          python -m scripts.check_publication
+          python -m scripts.validate_analysis
+      - name: Frontend contracts and build
+        run: |
+          npm test
+          npm run typecheck
+          npm run lint
+          npm run format:check
+          npm run build
+      - name: Actual Next.js to FastAPI HTTP flows
+        run: python -m scripts.verify_stack --standalone
+      - name: Prepared local launcher and service cleanup
+        run: |
+          python -m scripts.verify_dev
+          python -m scripts.verify_dev --production
+      - name: Container build and readiness
+        run: |
+          docker compose config --quiet
+          docker compose up --build --detach --wait --wait-timeout 120
+          curl --fail --silent http://127.0.0.1:3000/api/football/data/catalog | python -c 'import json,sys; d=json.load(sys.stdin); assert len(d["players"]) == 493 and d["mode"] == "bundled_analysis"'
+      - name: Stop verification containers
+        if: always()
+        run: docker compose down
+      - name: Build single-service showcase image
+        run: |
+          docker build -t frp-showcase .
+          docker run --detach --name frp-showcase --memory=512m --pids-limit=128 --read-only --tmpfs /tmp:rw,size=64m --cap-drop ALL --security-opt no-new-privileges -p 127.0.0.1:3001:3000 frp-showcase
+          curl --retry 12 --retry-connrefused --retry-delay 2 --fail --silent http://127.0.0.1:3001/api/football/data/catalog | python -c 'import json,sys; d=json.load(sys.stdin); assert len(d["players"]) == 493'
+      - name: Stop showcase container
+        if: always()
+        run: docker rm -f frp-showcase || true

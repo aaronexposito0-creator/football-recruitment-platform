@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "dataset_id": "c6b20c36ee58c5b18c3e",
+  "checks": [
+    "Production HTML serves successfully",
+    "Validated dataset readiness, security headers and same-origin POST boundary",
+    "Next proxy calls live FastAPI and serves 493 real players without private data",
+    "Real accent-insensitive search through Next proxy",
+    "Real profile, cohort, evidence and explained similarity through Next proxy",
+    "Editable weighted brief and hard exclusion constraints through Next proxy",
+    "Fixed-cohort advanced search, extreme empty search and contextualised spatial summaries",
+    "Actual shortlist CSV export with a 3000-character note reimports with unchanged rates, reference, coverage and confidence",
+    "CSV/XLSX preview and analysis; nulls/formulas/upload limits; impossible subtotals withheld; only verified canonical imports receive external benchmarks",
+    "Actual HTTP profile, similarity, custom Fit, maps and CSV/XLSX payloads pass browser runtime validation; duplicate imports cannot fill squad targets",
+    "My Club demo: 25 real Spain players through the same CSV parser, mapping, analysis and frontend validators; every per90 reconciles",
+    "Unsupported metrics rejected; raw or arbitrary proxy routes unavailable",
+    "API outage returns explicit 503 while the same real analysis remains available"
+  ],
+  "data_mode": "bundled_analysis",
+  "provider_network_requests": 0
+}

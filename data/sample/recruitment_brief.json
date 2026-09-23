@@ -1,0 +1,13 @@
+{
+  "role_name": "Progressive 8",
+  "position_groups": ["CM"],
+  "age_max": 23,
+  "min_minutes": 900,
+  "requirements": [
+    {"metric": "progressive_passes_per90", "weight": 3.0, "direction": "higher", "minimum": 4.0},
+    {"metric": "progressive_carries_per90", "weight": 2.0, "direction": "higher"},
+    {"metric": "pressures_per90", "weight": 2.5, "direction": "higher"},
+    {"metric": "pass_completion", "weight": 2.0, "direction": "higher"},
+    {"metric": "turnovers_per90", "weight": 1.0, "direction": "lower"}
+  ]
+}

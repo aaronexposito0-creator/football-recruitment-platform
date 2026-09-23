@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "dataset_id": "c6b20c36ee58c5b18c3e",
+  "source_hashes_verified": 104,
+  "parquet_hashes_verified": 61,
+  "raw_events_counted": 187924,
+  "duckdb_player_minutes_mismatches": 0,
+  "total_player_minutes": 112522.16475000011,
+  "independent_raw_counts": [
+    {
+      "player": "Lamine Yamal Nasraoui Ebana",
+      "shots": 18,
+      "goals": 1,
+      "assists": 4,
+      "xg": 1.58723324
+    },
+    {
+      "player": "Fabián Ruiz Peña",
+      "shots": 17,
+      "goals": 2,
+      "assists": 2,
+      "xg": 1.1449996729999998
+    },
+    {
+      "player": "Rodrigo Hernández Cascante",
+      "shots": 5,
+      "goals": 1,
+      "assists": 0,
+      "xg": 0.19102767569999998
+    },
+    {
+      "player": "Jasmin Kurtič",
+      "shots": 0,
+      "goals": 0,
+      "assists": 0,
+      "xg": 0.0
+    }
+  ],
+  "scope": "Independent raw counts for four players; all-corpus row counts and player minute aggregation in DuckDB. Lifecycle edge cases tested separately."
+}
