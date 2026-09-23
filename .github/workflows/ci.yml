@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 20
     env:
       NEXT_TELEMETRY_DISABLED: '1'
-      FRP_DATA_DIR: ${{ runner.temp }}/frp-empty-private-cache
+      FRP_DATA_DIR: /tmp/frp-empty-private-cache
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
